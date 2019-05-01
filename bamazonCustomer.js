@@ -1,5 +1,5 @@
 const inquirer = require("inquirer");
-const mysql = require("mysql2");
+const mysql = require("mysql");
 
 
 let itemInCart = {};
@@ -9,7 +9,8 @@ let quantityOrdered = 0;
 const connection = mysql.createConnection({
   host: "127.0.0.1",
   user: "root",
-  database: "bamazon"
+  database: "bamazon",
+  password: "deezdeez",
 });
 
 const createOrder = () => {
