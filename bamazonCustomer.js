@@ -4,13 +4,13 @@ var mysql = require("mysql");
 var connection = mysql.createConnection({
     host: "127.0.0.1",
 
-    // Your port; if not 3306
+
     port: 3306,
 
-    // Your username
+
     user: "root",
 
-    // Your password
+
     password: "deezdeez",
     database: "bamazon"
 });
@@ -26,8 +26,8 @@ function start() {
         {
             type: "list",
             name: "initialOption",
-            message: "What item would you like to purchase?",
-            choices: ["Post an Item", "Bid on an Item", "Exit"]
+            message: "Check Out My Shop Biatch",
+            choices: ["What item would you like to purchase?", "Exit"]
         }
     ]).then(function (answer) {
         console.log(answer.initialOption);
