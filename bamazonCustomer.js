@@ -27,11 +27,11 @@ function start() {
             type: "list",
             name: "initialOption",
             message: "Check Out My Shop!",
-            choices: ["What item would you like to purchase?", "Exit"]
+            choices: ["What item would you be interested in buying?", "Exit"]
         }
     ]).then(function (answer) {
         console.log(answer.initialOption);
-        if (answer.initialOption === "Post an Item") {
+        if (answer.initialOption === "Buy an Item") {
             postItem();
         } else if (answer.initialOption === "Bid on an Item") {
             bidItem();
