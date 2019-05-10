@@ -26,7 +26,7 @@ function start() {
         {
             type: "list",
             name: "initialOption",
-            message: "Check Out My Shop Biatch",
+            message: "Check Out My Shop!",
             choices: ["What item would you like to purchase?", "Exit"]
         }
     ]).then(function (answer) {
